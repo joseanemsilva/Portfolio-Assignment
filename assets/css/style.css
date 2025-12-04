@@ -117,6 +117,7 @@ section {
 }
 
 .section-text-p1 {
+    margin-top: 4rem;
     padding-top: 20px;
     text-align: center;
     color: var(--color-primary);
@@ -126,7 +127,6 @@ section {
     text-align: center;
     color: var(--color-secondary);
     font-size: 50px;
-    margin-top: 4rem;
 }
 
 /* PROFILE SECTION */
