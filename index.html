@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name='viewport'content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-  <meta name="description" content="This is a portfolio page to add software development projects.">
+  <meta name="description" content="A portfolio website developed as part of an assignment for COMP2148 course">
   <meta name="keywords" content="Portfolio Page, About me, Software projects">
   <meta name="author" content="Joseane Maria da Silva">
-  <title> Joseane Silva Portfolio </title>
+  <title> Joseane Silva - Portfolio </title>
 
   <link rel="stylesheet" href="assets/css/style.css">
  
@@ -19,11 +19,12 @@
         <!-- Header - Nav bar -->
         <header>
             <nav id="navbar">
-                <div class="logo-name"> &lt; Joseane Silva &gt;</div>
+                <div class="logo-name"><a href="#profile"> &lt; Joseane Silva &gt;</a></div>
                 <ul class="nav-links">
-                    <li><a href="#about"> About </a></li>
-                    <li><a href="#portfolio"> Portfolio </a></li>
-                    <li><a href="#contact"> Contact </a></li>
+                    <li><a href="#about"> About Me </a></li>
+                    <li><a href="#resume"> Resume </a></li>
+                    <li><a href="#projects"> Projects </a></li>
+                    <li><a href="#education"> Acknowledgements </a></li>
                 </ul>
             </nav>
         </header>
@@ -34,25 +35,17 @@
             <section id="profile">
                 <div class="profile-container">
                     <figure class="profile-pic">
-                        <img src="./assets/img/profile-pic.jpeg" alt="profile picture">
+                        <img src="./assets/img/picture.jpeg" alt="profile picture">
                     </figure>
                     <div class="profile-text">
-                        <p> Hello, I'm </p>
+                        <p> Hello, I am </p>
                         <h1 class="title"> Joseane Silva </h1>
-                        <p class="profile-subtitle"> A Computer Programming Student </p>
+                        <p class="profile-subtitle"> Computer programming Student and Emerging Developer</p>
 
                         <div class="btn-container">
-                            <!-- <button class="btn" onclick="window.open('https://drive.google.com/file/d/1iXWB_mERvyVK0_1nfte6NHlFmlz3y3Kt/view?usp=sharing')">
-                                Download CV
-                            </button> -->
                             <button class="btn" onclick="location.href='#contact'">
-                                Contact Info
+                                Contact Me
                             </button>
-                        </div>
-                        
-                        <div class="socials-container">
-                            <i class="fa-brands fa-linkedin icon-btn" onclick="window.open('https://linkedin.com/in/joseanemsilva')"></i>
-                            <i class="fa-brands fa-github icon-btn" onclick="window.open('https://github.com/joseanemsilva')"></i>
                         </div>
                     </div>
                 </div>
@@ -63,68 +56,224 @@
                 <h1 class="title"> About Me </h1>
                 <div class="text-container">
                     <p>
-                        I graduated in drama and I am a computer programming student at George Brown College discovering the art behind the screen.<br><br>
+                        I graduated in Drama and am now a Computer Programming student at George Brown College, discovering the art behind the screen. Although my academic background began in the arts, I was always fascinated by the intersection of creativity and technology, especially stage technologies like lighting and sound systems. After completing my degree, I worked as an arts teacher, but my curiosity for computing never disappeared. I began exploring online courses, such as The Odin Project, where I developed fundamental computer science concepts and an initial understanding of web development. The more I learned, the more I became drawn to the software development ecosystem.
+                        <br><br>
 
-                        I was always fascinated about art and technology since I was younger, but my journey led me to study Drama. Throughout the program, the space that caught my interest the most was stage technologies: how to manipulate the light and sound systems. When I graduated, I became an arts teacher, but, deep inside, the desire to challenge myself and to learn computer technology was still alive.<br><br>
-
-                        I started my computer science learning process exploring online courses, especially The Odin Project, initially focusing on building  fundamentals understanding about computer, and how everything is connected inside. I also could build a basic understanding about web development.<br><br>
-
-                        Driven by  curiosity, the more I dug into this new journey, the more I was got involved with software development ecosystem. To learn more, and build stronger skills, I started the Computer Programming program at George Brown College. It has been important to boost the understanding of computer science, computer logic, database management system, CLIs, git and GitHub, and some programming languages, such as Javascript and C# to name a few.<br><br>
-
-                        Most importantly, this journey has given me the opportunity to connect the arts knowledge and technology together, using creativity while solving problems and building applications and web pages. Here is some of the technologies I have been working.<br><br>
+                        Driven by this growing interest, I pursued the Computer Programming program at George Brown College to strengthen my technical foundation. Through the program, I have gained experience in computer logic, database management systems, command-line tools, Git/GitHub, and programming languages such as JavaScript and C#. Most importantly, this journey has allowed me to merge my artistic background with technology, using creativity to approach problem-solving, design meaningful user experiences, and build applications and web pages. Below are some of the technologies I have been working with.
+                       <br><br>
                     </p>
                 </div>
-
-                <div id="technologies">
-                    <h2> Technologies </h2>
-                <article>
-                    <div class="tech-info">
-                        <i class="fa-brands fa-css3-alt icon"></i>
-                        <h3>CSS</h3>
-                        <p> Intermediate </p>
-                    </div>
-                    <div class="tech-info">
-                        <i class="fa-brands fa-html5 icon"></i>
-                        <h3>HTML</h3>
-                        <p> Intermediate </p>
-                    </div>
-                    <div class="tech-info">
-                        <i class="fa-brands fa-js icon"></i>
-                        <h3> JavaScript </h3>
-                        <p> Intermediate </p>
-                    </div>
-                    <div class="tech-info">
-                        <i class="fa-solid fa-database icon"></i>
-                        <h3> SQL </h3>
-                        <p> Intermediate </p>
-                    </div>
-                    <div class="tech-info">
-                        <i class="fa-brands fa-git-alt icon"></i>
-                        <h3> Git </h3>
-                        <p> Basic </p>
-                    </div>
-                    <div class="tech-info">
-                        <i class="fa-solid fa-square-binary"></i>
-                        <h3> C# </h3>
-                        <p> Basic </p>
-                    </div>
-                    <div class="tech-info">
-                        <i class="fa-brands fa-linux"></i>
-                        <h3> Linux </h3>
-                        <p> Basic </p>
-                    </div>
-                </article>
             </section>
+
+            <!-- RESUME SECTION -->
+            <section id="resume">
+                <h1 class="title">Resume</h2>
+
+                <!-- Soft Skills -->
+                <div id="skills">
+                    <!-- <h2> Soft Skills </h2> -->
+                    <div class="two-col">
+                        <!-- Soft skills -->
+                            <div class="card" id="skill-container">
+                                <h3 class="card-title">Soft Skills</h3>
+                                <div class="soft-skill-label">
+                                    <ul class="skills-ul">
+                                        <li class="item">Effectively communicate in different environments, ensuring clarity understanding and collaboration.</li>
+                                        <li class="item">Experienced working in group projects, coordinating tasks, and supporting teammates.</li>
+                                        <li class="item">Use logical thinking and creativity together to analyze design and find system solutions.</li>
+                                        <li class="item">Skilled at prioritizing tasks, managing deadlines, and keeping projects on track.</li>
+                                        <li class="item">Comfortable learning unfamiliar tools, and motivated to expand technical knowledge to grow and improve technical skills.</li>
+                                    </ul>
+                                </div>
+
+                                </div>
+                                <!-- Technical skills -->
+                                <div class="card" id="skill-container">
+                                    <h3 class="card-title">Technical Skills</h3>
+                                <div class="soft-skill">
+                                    <div class="soft-skill-label">
+                                        <ul class="skills-ul">
+                                            <li class="item">Worked with Advanced programming concepts (DOM, HTTP, Cookie and Event handling)</li>
+                                            <li class="item">Applied creative skills to design web applications, building user-friendly and responsive layouts</li>
+                                            <li class="item"> Built more than five software projects in team collaboration, integrating with git,
+                                            contributing to organizing tasks and time management, meeting all deadlines</li>
+                                            <li class="item">Modeled database schemas, querying, and manipulating data using back-end technologies, with
+                                            MySQL and PostgreSQL.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skills in technologies -->
+                <div id="technologies">
+                    <h2> Programming Skills </h2>
+                    <article id="tech-skills">
+                        <div class="tech-info">
+                            <i class="fa-brands fa-css3-alt icon"></i>
+                            <h3>CSS</h3>
+                            <p> Intermediate </p>
+                        </div>
+                        <div class="tech-info">
+                            <i class="fa-brands fa-html5 icon"></i>
+                            <h3>HTML</h3>
+                            <p> Intermediate </p>
+                        </div>
+                        <div class="tech-info">
+                            <i class="fa-brands fa-js icon"></i>
+                            <h3> JavaScript </h3>
+                            <p> Intermediate </p>
+                        </div>
+                        <div class="tech-info">
+                            <i class="fa-solid fa-database icon"></i>
+                            <h3> SQL </h3>
+                            <p> Intermediate </p>
+                        </div>
+                        <div class="tech-info">
+                            <i class="fa-brands fa-git-alt icon"></i>
+                            <h3> Git </h3>
+                            <p> Basic </p>
+                        </div>
+                        <div class="tech-info">
+                            <i class="fa-solid fa-square-binary"></i>
+                            <h3> C# </h3>
+                            <p> Intermediate </p>
+                        </div>
+                        <div class="tech-info">
+                            <i class="fa-brands fa-linux"></i>
+                            <h3> Linux </h3>
+                            <p> Basic </p>
+                        </div>
+                        <div class="tech-info">
+                            <i class="fa-brands fa-java"></i>
+                            <h3> Java </h3>
+                            <p> Basic </p>
+                        </div>
+                        <div class="tech-info">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <h3> Bootstrap </h3>
+                            <p> Intermediate </p>
+                        </div>
+                        <div class="tech-info">
+                            <i class="fa-brands fa-react"></i>
+                            <h3> React.js </h3>
+                            <p> Basic </p>
+                        </div>
+                        <div class="tech-info">
+                            <i class="fa-solid fa-gears"></i>
+                            <h3> Asp.Net </h3>
+                            <p> Basic </p>
+                        </div>
+                        <div class="tech-info">
+                            <i class="fa-brands fa-node-js"></i>
+                            <h3> NodeJs </h3>
+                            <p> Basic </p>
+                        </div>
+                    </article>
+                </div>
+
+                <!--Education Section-->
+                <div id="ew-wrapper">
+                    <h2>Education</h2>
+                    <div class="card-ew">
+                        <article class="ew-card">
+                            <div>
+                                <p class="ew-years">2024 – 2026</p>
+                                <p class="ew-title">George Brown College</p>
+                                <p class="ew-subtitle">Computer Programming</p>
+                                <p class="ew-location">Toronto, ON</p>
+                                <ul class="skills-ul">
+                                    <li class="item">Final-year student in the Computer Programming program focusing on full-stack development, databases, and software quality. Completed multiple team
+                                    projects using modern technologies and version control tools.</li>
+                                </ul>
+                                <br>
+                                <p class="ew-years">2018 – 2020</p>
+                                <p class="ew-title">Federal University of Rio Grande do Norte (UFRN)</p>
+                                <p class="ew-subtitle">Master’s in Visual and Performing Arts</p>
+                                <p class="ew-location">Natal, Brazil</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!--Work Experience Section-->
+                <div id="ew-wrapper">
+                    <h2>Work Experience</h2>
+                    <div class="card-ew">
+                        <article class="ew-card">
+                            <div>
+                                <p class="ew-years">2022 – 2024</p>
+                                <p class="ew-title">University of Toronto Press</p>
+                                <p class="ew-subtitle">Retail Associate</p>
+                                <p class="ew-location">Toronto, ON</p>
+                                <ul class="skills-ul">
+                                    <li class="item">Collaborated with managers and technical staff to report system
+                                irregularities, trained and onboarded new team members, and delivered
+                                consistent customer service during daily operations and special events.</li>
+                                </ul>
+                                <br>
+                                <p class="ew-years">2016 – 2021</p>
+                                <p class="ew-title">Municipality of Parnamirim</p>
+                                <p class="ew-subtitle">Arts Teacher</p>
+                                <p class="ew-location">Rio Grande do Norte, Brazil</p>
+                                 <ul class="skills-ul">
+                                    <li class="item">Planned and coordinated school-wide arts events and facilitated
+                                creative classroom projects, strengthening collaboration, organization,
+                                and communication skills in diverse groups.</li>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!--Volunteering-->
+                <div id="ew-wrapper">
+                    <h2>Volunteering</h2>
+                    <div class="card-ew">
+                        <article class="ew-card">
+                            <div>
+                                <p class="ew-years">2025 – Present</p>
+                                <p class="ew-title">Member of the Board of Directors</p>
+                                <p class="ew-subtitle">Forró For All Inc - Not for Profit</p>
+                                <p class="ew-location">Toronto, ON</p>
+                                <ul class="skills-ul">
+                                    <li class="item">Managed the Forró dance project, participating actively in  organizational and decision-making processes.</li>
+                                    <li class="item">Maintained ongoing communication with more them 15 volunteers, to support and to ensure a collaborative environment.</li>
+                                    <li class="item">Led board meetings by organizing agendas, scheduling sessions, and documenting reports.</li>
+                                    <li class="item">Collaborate in designing and planning the layout for the organization's website, participating in creative and technical discussions.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
             <!-- Portfolio Section -->
-            <section id="portfolio">
+            <section id="projects">
                 <div>
-                    <p class="section-text-p1"> Latest  Projects </p>
-                    <h1 class="title"> Portfolio </h1>
+                    <p class="section-text-p1"> Latest  Works </p>
+                    <h1 class="title"> Projects </h1>
                 </div>
                 <div class="projects-container">
                     <!-- Projects rendered using js and json file. -->
                 </div>
             </section>
+
+        <!-- EDUCATION & ACKNOWLEDGEMENTS -->
+            <section id="education">
+                <h1 class="title">Acknowledgements</h1>
+                    <div class="card-custom">
+                        <p class="ew-years">George Brown College</p>
+                        <p>Dean's Honour List - Fall 2024</p>
+                        <p>Dean's Honour List - Winter 2025</p>
+                        <div class="btn-container">
+                        <button class="custom-btn" onclick="window.open('https://drive.google.com/file/d/1f0mD7ryj25fMjbci8Bs9RBYvY_1mGuHY/view?usp=drive_link')"> Download Transcripts
+                        </button>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Contact section -->
             <section id="contact">
                 <p class="section-text-p1"> Get in Touch </p>
@@ -140,10 +289,9 @@
                         <p><a href="https://linkedin.com/in/joseanemsilva"> LinkedIn </a></p>
                     </div>
                 </div>
-
             </section>
-        </main>
-        
+        </main>        
+
         <!-- Footer -->
         <footer>
             <nav>

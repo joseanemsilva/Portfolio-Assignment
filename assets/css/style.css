@@ -43,6 +43,12 @@ a,
 }
 
 /* DESKTOP NAV */
+header{
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+
 header,
 footer {
     display: flex;
@@ -51,12 +57,21 @@ footer {
     background-color: var(--color-primary);
 }
 
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+
 nav,
 .nav-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
     min-height: 75px;
     background-color: var(--color-primary);
 }
@@ -82,6 +97,15 @@ nav,
     padding: 10px;
     margin: 0 10px;
     font-size: 24px;
+}
+.logo-name a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+.logo-name a:hover {
+    color: var(--color-complementary);
+    text-decoration: underline;
+    text-underline-offset: 15px;
 }
 
 /* SECTIONS */
@@ -138,7 +162,7 @@ section {
 }
 
 .profile-subtitle {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 15px;
 }
 
@@ -178,6 +202,18 @@ section {
     background-color: var(--color-complementary);
 }
 
+.custom-btn {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
+    margin: 2.5rem 1rem 5rem;
+    background-color: var(--color-primary);
+    color: var(--color-white); 
+}
+
 /* ABOUT SECTION */
 .text-container {
     display: flex;
@@ -191,20 +227,96 @@ section {
     text-align: justify;
 }
 
-/* TECHNOLOGIES */
-#technologies h2 {
-    text-align: center;
-    color: var(--color-secondary);
-    font-size: 35px;
+
+/* RESUME SECTION */
+.card-ew {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
 }
 
-article {
+.skills-ul .item{
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* Skills */
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 2.5rem;
+      align-items: flex-start;
+      width: 70%;
+      margin: 20px auto;
+    }
+
+    .card {
+      padding: 1.5rem;
+      border-radius: 5px;
+      border: 1px solid rgba(0,0,0, .125);
+      box-shadow: 0 0 7px rgba(0,0,0, .1);
+      border: 1px solid #e5e7eb;
+    }
+
+    .card-title {
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+ /* ---------- Skills ---------- */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-pill {
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid #e5e7eb;
+      background-color: #f9fafb;
+      font-size: 0.85rem;
+      color: #374151;
+    }
+
+    .soft-skill {
+      margin-bottom: 1rem;
+    }
+
+    .soft-skill-label {
+      font-size: 16px;
+      margin-bottom: 0.3rem;
+      color: #4b5563;
+      display: flex;
+      font-family: "Open Sans", sans-serif;
+      justify-content: space-between;
+    }
+
+/* TECHNICAL SKILLS - MINE */
+#skills h2, #technologies h2, #ew-wrapper h2 {
+    margin: 1rem 15rem;
+    width: 70%;
+    color: var(--color-primary);
+    font-size: 30px;
+}
+
+#tech-skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     width: 70%;
     padding: 15px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .tech-info {
@@ -213,8 +325,8 @@ article {
     justify-self: center;
     border: 1px solid rgba(0,0,0, .125);
     border-radius: 5px;
-    width: 190px;
-    height: 190px;
+    width: 150px;
+    height: 150px;
     padding: 0 7px;
     box-shadow: 0 0 7px rgba(0,0,0, .1);
     font-family: "Open Sans", sans-serif;
@@ -240,7 +352,72 @@ article {
     margin: 7px 0;
 }
 
+
+/* EDUCATION & WORK SECTION */
+.section-edu-work {
+    background-color: #e5ded4; /* soft beige like the example */
+    padding: 3rem 1.5rem;
+  }
+
+  .ew-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .ew-card {
+
+    border-radius: 5px;
+    /* border: 1px solid rgba(0,0,0, .125); */
+    box-shadow: 0 0 7px rgba(0,0,0, .1);
+    border: 1px solid #e5e7eb;
+    background-color: #ffffff;
+    padding: 2.5rem 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 3rem;
+  }
+
+  .ew-left {
+    flex: 0 0 38%;
+  }
+
+  .ew-right {
+    flex: 1;
+    font-size: 1.05rem;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.7;
+    color: #374151;
+  }
+
+  .ew-years {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  .ew-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    color: #111827;
+  }
+
+  .ew-subtitle,
+  .ew-location {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 0.25rem;
+  }
+
 /* PORTFOLIO SECTION */
+#projects {
+    margin-bottom: 2rem;
+}
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -259,6 +436,11 @@ article {
     border-radius: 5px;
     box-shadow: 0 0 7px rgba(0,0,0, .1);
     transition: all 0.5s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-box:hover {
@@ -267,9 +449,10 @@ article {
 
 .project-name {
     text-align: center;
-    align-self: center;
+    align-items: center;
     color: var(--color-white);
 }
+
 .project-description {
     position: absolute;
     top: 0;
@@ -312,12 +495,26 @@ article {
     opacity: 1;
 }
 
+/* Acknowledgment */
+.card-custom{
+    width: 70%;
+    margin: 2.5rem auto;
+    padding: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0, .125);
+    box-shadow: 0 0 7px rgba(0,0,0, .1);
+    border: 1px solid #e5e7eb;
+    font-family: "Open Sans", sans-serif;
+    line-height: 30px;
+}
+
+
 /* CONTACT SECTION */
 .contact-info-container {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 0 7px rgba(0,0,0, .1);
     margin: 95px auto 150px;
     background-color: var(--color-primary);
