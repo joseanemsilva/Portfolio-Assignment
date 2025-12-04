@@ -1,0 +1,39 @@
+{
+    "projects": [
+        {
+            "name": "Recipe Page",
+            "description": "Recipe website developed as part of The Odin Project, using basic HTML and CSS.",
+            "url": "https://joseanemsilva.github.io/odin-recipes/",
+            "github": "https://github.com/joseanemsilva/odin-recipes"
+            
+        },
+        {
+            "name": "Event Page",
+            "description": "Event page developed as part of the Introduction to web development course, using intermediate HTML and CSS knowledge.",
+            "url": "https://joseanemsilva.github.io/event-page-project/",
+            "github": "https://github.com/joseanemsilva/event-page-project"
+        },
+        {
+            "name": "Clinic Database System",
+            "description": "Design a conceptual and a logical EER model for a clinic system, as well as retrieve data by running queries, developed as part of the Database Management System course.",
+            "github": "https://github.com/joseanemsilva/clinic-db-system"
+        },
+        {
+            "name": "Vinyl Collection",
+            "description": "Vinyl collection website developed as part of the Introduction to Full Stack course, developed using HTML, CSS, JavaScript and JSON.",
+            "url": "https://joseanemsilva.github.io/vinyl-collection/",
+            "github": "https://github.com/joseanemsilva/vinyl-collection"
+        },
+        {
+            "name": "College Application",
+            "description": "The project College Application is a console app developed using C#. It focuses on the use of Object Oriented Programming, such as creating classes, working with aggregation, 2D arrays, and file handling.",
+            "github": "https://github.com/joseanemsilva/college-application"
+        },
+        {
+            "name": "Landing Page",
+            "description": "This landing page project was developed using HTML, CSS, specially the flexbox knowledge, as part of The Odin Project.",
+            "url": "https://joseanemsilva.github.io/landing-page/",
+            "github": "https://github.com/joseanemsilva/landing-page"
+        }
+    ]
+}

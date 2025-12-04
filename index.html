@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport'content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <meta name="description" content="This is a portfolio page to add software development projects.">
+  <meta name="keywords" content="Portfolio Page, About me, Software projects">
+  <meta name="author" content="Joseane Maria da Silva">
+  <title> Joseane Silva Portfolio </title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="assets/js/script.js"></script>
+</head>
+
+    <body>
+        <!-- Header - Nav bar -->
+        <header>
+            <nav id="navbar">
+                <div class="logo-name"> &lt; Joseane Silva &gt;</div>
+                <ul class="nav-links">
+                    <li><a href="#about"> About </a></li>
+                    <li><a href="#portfolio"> Portfolio </a></li>
+                    <li><a href="#contact"> Contact </a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main page content -->
+        <main>
+            <!-- Landing Page - profile -->
+            <section id="profile">
+                <div class="profile-container">
+                    <figure class="profile-pic">
+                        <img src="./assets/img/profile-pic.jpeg" alt="profile picture">
+                    </figure>
+                    <div class="profile-text">
+                        <p> Hello, I'm </p>
+                        <h1 class="title"> Joseane Silva </h1>
+                        <p class="profile-subtitle"> A Computer Programming Student </p>
+
+                        <div class="btn-container">
+                            <!-- <button class="btn" onclick="window.open('https://drive.google.com/file/d/1iXWB_mERvyVK0_1nfte6NHlFmlz3y3Kt/view?usp=sharing')">
+                                Download CV
+                            </button> -->
+                            <button class="btn" onclick="location.href='#contact'">
+                                Contact Info
+                            </button>
+                        </div>
+                        
+                        <div class="socials-container">
+                            <i class="fa-brands fa-linkedin icon-btn" onclick="window.open('https://linkedin.com/in/joseanemsilva')"></i>
+                            <i class="fa-brands fa-github icon-btn" onclick="window.open('https://github.com/joseanemsilva')"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About me Section -->
+            <section id="about">
+                <p class="section-text-p1"> Get to Know More </p>
+                <h1 class="title"> About Me </h1>
+                <div class="text-container">
+                    <p>
+                        I graduated in drama and I am a computer programming student at George Brown College discovering the art behind the screen.<br><br>
+
+                        I was always fascinated about art and technology since I was younger, but my journey led me to study Drama. Throughout the program, the space that caught my interest the most was stage technologies: how to manipulate the light and sound systems. When I graduated, I became an arts teacher, but, deep inside, the desire to challenge myself and to learn computer technology was still alive.<br><br>
+
+                        I started my computer science learning process exploring online courses, especially The Odin Project, initially focusing on building  fundamentals understanding about computer, and how everything is connected inside. I also could build a basic understanding about web development.<br><br>
+
+                        Driven by  curiosity, the more I dug into this new journey, the more I was got involved with software development ecosystem. To learn more, and build stronger skills, I started the Computer Programming program at George Brown College. It has been important to boost the understanding of computer science, computer logic, database management system, CLIs, git and GitHub, and some programming languages, such as Javascript and C# to name a few.<br><br>
+
+                        Most importantly, this journey has given me the opportunity to connect the arts knowledge and technology together, using creativity while solving problems and building applications and web pages. Here is some of the technologies I have been working.<br><br>
+                    </p>
+                </div>
+
+                <div id="technologies">
+                    <h2> Technologies </h2>
+                <article>
+                    <div class="tech-info">
+                        <i class="fa-brands fa-css3-alt icon"></i>
+                        <h3>CSS</h3>
+                        <p> Intermediate </p>
+                    </div>
+                    <div class="tech-info">
+                        <i class="fa-brands fa-html5 icon"></i>
+                        <h3>HTML</h3>
+                        <p> Intermediate </p>
+                    </div>
+                    <div class="tech-info">
+                        <i class="fa-brands fa-js icon"></i>
+                        <h3> JavaScript </h3>
+                        <p> Intermediate </p>
+                    </div>
+                    <div class="tech-info">
+                        <i class="fa-solid fa-database icon"></i>
+                        <h3> SQL </h3>
+                        <p> Intermediate </p>
+                    </div>
+                    <div class="tech-info">
+                        <i class="fa-brands fa-git-alt icon"></i>
+                        <h3> Git </h3>
+                        <p> Basic </p>
+                    </div>
+                    <div class="tech-info">
+                        <i class="fa-solid fa-square-binary"></i>
+                        <h3> C# </h3>
+                        <p> Basic </p>
+                    </div>
+                    <div class="tech-info">
+                        <i class="fa-brands fa-linux"></i>
+                        <h3> Linux </h3>
+                        <p> Basic </p>
+                    </div>
+                </article>
+            </section>
+            <!-- Portfolio Section -->
+            <section id="portfolio">
+                <div>
+                    <p class="section-text-p1"> Latest  Projects </p>
+                    <h1 class="title"> Portfolio </h1>
+                </div>
+                <div class="projects-container">
+                    <!-- Projects rendered using js and json file. -->
+                </div>
+            </section>
+            <!-- Contact section -->
+            <section id="contact">
+                <p class="section-text-p1"> Get in Touch </p>
+                <h1 class="title"> Contact Me </h1>
+                <div class="contact-info-container">
+                    <div class="contact-info">
+                        <i class="fa-solid fa-envelope icon contact-icon"></i>
+                        <p><a href="mailto:joseanesilva.uf@gmail.com"> joseanesilva.uf@gmail.com </a></p>
+                    </div>
+
+                    <div class="contact-info">
+                        <i class="fa-brands fa-linkedin icon contact-icon"></i>
+                        <p><a href="https://linkedin.com/in/joseanemsilva"> LinkedIn </a></p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer>
+            <nav>
+                <div class="nav-links-container logo-name"> &lt; &sol; Joseane Silva &gt; </div>
+                    <ul class="nav-links">
+                        <li><a href="#about"> About </a></li>
+                        <li><a href="#portfolio"> Portfolio </a></li>
+                        <li><a href="#contact"> Contact </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p> &copy; Joseane Silva 2025  </p>
+        </footer>
+    </body>
+</html>

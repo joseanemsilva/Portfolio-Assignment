@@ -1,0 +1,142 @@
+/* MEDIA QUERIES RESPONSIVE */
+
+/* MEDIA QUERIES RESPONSIVE
+@media screen and (max-width: 600px) {
+    .menu-btn {
+        display: block !important;
+        cursor: pointer;
+    }
+    .nav-links {
+        flex-direction: column;
+        background-color: var(--color-complementary1);
+        position: absolute;
+        top: 0;
+        right: -900px;
+        width: 80%;
+        height: 100vh;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+    .nav-links.active {
+        right: 0;
+    }
+} */
+
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: fit-content;
+        margin-bottom: 3rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    #profile, 
+    .socials-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section,
+    .socials-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+    .portfolio-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .portfolio-box {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .menu-btn {
+        display: block !important;
+        cursor: pointer;
+    }
+    .nav-links {
+        flex-direction: column;
+        background-color: var(--color-complementary1);
+        position: absolute;
+        top: 0;
+        right: -900px;
+        width: 80%;
+        height: 80%;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+    .nav-links.active {
+        right: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #profile {
+        height: fit-content;
+        margin-bottom: 0;
+    }
+    article {
+        font-size: 1rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers, .contact-info-upper-container, .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p, .nav-links li a {
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+    .technologies-sub-title {
+        font-size: 1.25rem;
+    }
+
+    .portfolio-container{
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+    .section__pic-container {
+        width: auto;
+        height: 46vh;
+        justify-content: center;
+    }
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    #contact, footer {
+        height: 40vh;
+    }
+}
